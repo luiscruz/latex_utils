@@ -1,0 +1,44 @@
+% ----------------------------------------- %
+%             Cruz Article Style            %
+%                VERSION 1.0                %
+%                29 Jan 2013                %
+% ----------------------------------------- %
+
+% ----------------------------------------- %
+\usepackage[english]{babel}
+% ----------------------------------------- %
+\usepackage[utf8]{inputenc}
+% ----------------------------------------- %
+\usepackage[margin=1in]{geometry} %document margin
+% ----------------------------------------- %
+\usepackage{amsmath}  % use mathematical with $$
+% ----------------------------------------- %
+\usepackage{natbib}
+% ----------------------------------------- %
+\usepackage{graphicx}
+% ----------------------------------------- %
+\usepackage[auth-sc,affil-sl]{authblk}
+% ----------------------------------------- %
+\usepackage[colorinlistoftodos]{todonotes} % \todo{comment}
+% ----------------------------------------- %
+\usepackage{hyperref}
+% ----------------------------------------- %
+\usepackage{enumitem}
+%define item label \begin{enumerate}[label = \theenumi{}]
+% ----------------------------------------- %
+\usepackage{xcolor,colortbl}
+% ----------------------------------------- %
+\usepackage{array}
+% ----------------------------------------- %
+\usepackage{pdfpages} %include pdf files
+% ----------------------------------------- %
+\usepackage{framed} %create boxes around text \begin{framed}
+% ----------------------------------------- %
+
+% --------------- Utilities --------------- %
+%Command to create a rating field for questionnaires
+\newcommand{\ratingMark}{
+  \hfill{}\mbox{
+    {\footnotesize Disagree $\bigcirc \bigcirc \bigcirc \bigcirc \bigcirc$ Agree}
+    }
+}
