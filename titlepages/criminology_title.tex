@@ -1,11 +1,11 @@
 % ----------------------------------------- %
-%           Criminology Title Page          %
-%                VERSION 1.0                %
-%                29 Jan 2013                %
+%         Crimonology Article Style         %
+%                VERSION 2.0                %
+%                31 Jan 2013                %
 % ----------------------------------------- %
 
-%requires \usepackage{titling}
-
+% ----------------------------------------- %
+\newcommand{\HRule}{} % Defines a new command for the horizontal lines, change thickness here
 \begin{titlepage}
 % Upper part of the page. The '~' is needed because \\
 % only works if a paragraph has started.
@@ -14,34 +14,44 @@
 %----------------------------------------------------------------------------------------
 \noindent \includegraphics[width=0.3\textwidth]{imagens/logo}~\\[1cm]
 \begin{center}
- \textsc{\LARGE Faculdade de Direito da Universidade do Porto}\\[1.5cm]
+ \textsc{\LARGE \theInstitutionName}\\[1.5cm]
 
-\noindent \textsc{\Large Seminário Interdisciplinar}\\[0.5cm]
+\noindent \textsc{\Large \theCourseName}\\[0.5cm]
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 \rule{\linewidth}{0.5mm} \\[0.25cm]
-{ \LARGE \bfseries \thetitle\\[0.4cm] }
+{
+\LARGE \bfseries
+\thetitle
+\\[0.4cm]
+}
 
-\rule{\linewidth}{0.5mm} \\[1.5cm]
+\rule{\linewidth}{0.5mm} \\[1cm]
 
 %----------------------------------------------------------------------------------------
 %	AUTHOR SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}{0.4\textwidth}
-\begin{flushleft} \large
-\emph{Autor:}\\
-Cátia \textsc{Ferreira}
+\noindent \textsc{\Large \theauthor}\\[1.7cm]
+
+\begin{flushleft}
+\large
+\textbf{Instituição de Estágio:}  \\
+Direção Geral de Reinserção Social\\
+Delegação Regional do Norte - Núcleo de Apoio Técnico
+
+~
+
+\textbf{Orientador científico:} \\
+Professor Doutor~Jorge \textsc{Oliveira}
+
+~
+
+\textbf{Orientador institucional:} \\
+Drª.~Ana Paula \textsc{Agra}
 \end{flushleft}
-\end{minipage}
-\begin{minipage}{0.4\textwidth}
-\begin{flushright} \large
-\emph{Orientador:} \\
-Prof.~Jorge \textsc{Oliveira}
-\end{flushright}
-\end{minipage}
 
 \vfill
 
